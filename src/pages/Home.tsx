@@ -18,10 +18,10 @@ const Home = () => {
             className="mb-4"
           />
           <h1 className="text-5xl font-bold text-text mb-4">
-            Exploitez le potentiel d'un assistant IA
+            Exploitez le potentiel de l'IA
           </h1>
           <p className="text-xl text-text/80 mb-6 max-w-2xl">
-            Les tâches répétitives, l'analyse des données, la gestion des clients n'as jamais été aussi faciles.
+            Les tâches répétitives, l'analyse des données, la gestion des clients n'ont jamais été aussi faciles.
           </p>
           <Link to="/contact" className="btn-primary" onClick={scrollToTop}>
             👉 Réserver un pré-audit gratuit
@@ -76,7 +76,7 @@ const Home = () => {
       {/* Testimonials */}
       <section className="py-20 bg-white">
         <div className="container">
-          <h2 className="section-title text-center">Pourquoi s'approprier un assistant IA ?</h2>
+          <h2 className="section-title text-center">Pourquoi s'approprier un l'IA ?</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[
               {
@@ -123,7 +123,7 @@ const Home = () => {
             </p>
 
             <p className="mt-6 text-lg text-text/80">
-              Que vous soyez allergique à la tech ou juste curieux, on vous accompagne pas à pas. Pas de jargon, pas de prise de tête. Juste des solutions concrètes, utiles et pensées pour **vous simplifier la vie**.
+              Que vous soyez allergique à la tech ou juste curieux, on vous accompagne pas à pas. Pas de jargon, pas de prise de tête. Juste des solutions concrètes, utiles et pensées pour vous simplifier la vie.
             </p>
 
             <div className="space-y-4 text-left mt-10 text-lg">

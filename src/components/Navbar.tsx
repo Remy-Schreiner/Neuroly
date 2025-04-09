@@ -6,7 +6,6 @@ import logo from '/icone.png?url';
 const navigation = [
   { name: 'Accueil', href: '/' },
   { name: 'Notre accompagnement', href: '/approche' },
-  { name: 'Formules', href: '/formules' },
   { name: 'Contact', href: '/contact' },
 ];
 

@@ -79,59 +79,6 @@ const Contact = () => {
   </div>
 </section>
 
-{/* Contact */}
-<section className="py-20 bg-background">
-  <div className="container">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold mb-4">On échange par mail ?</h2>
-      <p className="text-lg text-text/80">
-        Vous avez une idée, un projet, une question ? Écrivez-nous, même si ce n’est pas encore très clair. <br />
-        Promis, on ne mord pas (et on répond vite).
-      </p>
-    </div>
-
-    <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
-      <div className="space-y-8 max-w-md">
-        <div className="flex items-start space-x-4">
-          <Mail className="h-7 w-7 text-primary mt-1" />
-          <div>
-            <h3 className="font-semibold text-lg">Par email</h3>
-            <p className="text-text/80">contact@neuroly.fr</p>
-          </div>
-        </div>
-
-        <div className="flex items-start space-x-4">
-          <MapPin className="h-7 w-7 text-primary mt-1" />
-          <div>
-            <h3 className="font-semibold text-lg">Où sommes-nous ?</h3>
-            <p className="text-text/80">Basés à Paris, mais on bosse avec vous où que vous soyez.</p>
-          </div>
-        </div>
-
-        <div className="mt-8 text-center">
-          <p className="text-primary font-semibold mb-4">Prêt à discuter ?</p>
-          <a
-            href="mailto:contact@neuroly.fr"
-            className="btn-primary inline-flex items-center space-x-2"
-            onClick={scrollToTop}
-          >
-            <Mail className="h-5 w-5" />
-            <span>Envoyer un email</span>
-          </a>
-        </div>
-      </div>
-
-      <div className="w-full md:w-1/2 lg:w-1/3">
-        <img
-          src="/logo_slogan.png"
-          alt="logo et slogan"
-          className="rounded-xl shadow-lg"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
      {/* FAQ – Page Contact */}
       <section className="py-20 bg-secondary/10">
         <div className="container">

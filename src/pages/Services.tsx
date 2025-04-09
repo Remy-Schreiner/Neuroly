@@ -95,14 +95,10 @@ const Services = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/formules"
-                  className="btn-primary inline-flex items-center space-x-2"
-                  onClick={scrollToTop}
+                  to="/contact"
+                  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-accent hover:bg-accent-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
                 >
-                  <span>Voir nos formules</span>
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                  <span>Contacter-nous</span>
                 </Link>
               </div>
             ))}
@@ -149,11 +145,10 @@ const Services = () => {
               Découvrez comment l'IA peut transformer votre quotidien professionnel.
             </p>
             <Link
-              to="/formules"
-              className="btn-primary"
-              onClick={scrollToTop}
+              to="/contact"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-accent hover:bg-accent-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
             >
-              Voir nos formules
+              Contacter-nous
             </Link>
           </div>
         </div>

@@ -4,9 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Approach from './pages/Approach';
-import Formulas from './pages/Formulas';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
+import Services from './pages/Services';
 
 function App() {
   return (
@@ -15,7 +15,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/approche" element={<Approach />} />
-        <Route path="/formules" element={<Formulas />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>

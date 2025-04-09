@@ -9,6 +9,50 @@ const Approach = () => {
 
   return (
     <div>
+      {/* Valeurs */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <h2 className="section-title text-center">Nos valeurs chez Neuroly</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {[
+              {
+                icon: <Heart className="h-8 w-8 text-primary" />,
+                title: "Humain avant tout",
+          description:
+            "Chez nous, la technologie ne remplace pas les gens, elle les aide. On parle à des humains, pas à des machines. Et ça change tout : on prend le temps d'écouter, de comprendre, d'accompagner. On veut que vous vous sentiez à l’aise, même si vous débutez.",
+        },
+        {
+          icon: <Target className="h-8 w-8 text-primary" />,
+          title: "Efficacité concrète",
+          description:
+            "Pas de solutions qui brillent juste en vitrine. Ce qui compte pour nous, c’est ce que ça change pour vous : gagner du temps, alléger la charge mentale, avancer plus vite et plus sereinement. Si ça ne vous aide pas vraiment, on ne vous le propose pas. Point final.",
+        },
+        {
+          icon: <BookOpen className="h-8 w-8 text-primary" />,
+          title: "Pédagogie accessible",
+          description:
+            "On ne vous balance pas des termes techniques comme des confettis. On explique tout simplement, avec des mots clairs, des exemples concrets, et autant de fois qu’il faut. Apprendre l’IA, ça peut être facile, et même agréable. On est là pour vous le prouver.",
+        },
+        {
+          icon: <Shield className="h-8 w-8 text-primary" />,
+          title: "Éthique & transparence",
+          description:
+            "On dit ce qu’on fait, et on fait ce qu’on dit. Pas de fausses promesses, pas d’outils douteux, pas de boîte noire incompréhensible. L’IA doit être utilisée avec bon sens, dans le respect des gens et de leurs données. Et ça, on ne transige pas dessus.",
+        }
+      ].map((value, index) => (
+        <div
+          key={index}
+          className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+        >
+          <div className="mb-4">{value.icon}</div>
+          <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
+          <p className="text-text/80">{value.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Notre Histoire */}
       <section className="py-20 bg-secondary/10">
         <div className="container max-w-3xl mx-auto">
@@ -25,7 +69,7 @@ const Approach = () => {
             </p>
 
             <p className="mb-6">
-              Autour de moi, des pros brillants, motivés, compétents — mais totalement perdus face à l’IA. Pas parce qu’ils n’étaient pas capables. Non. Parce qu’on leur présentait ça avec des mots compliqués, des concepts flous et trop de blabla. Comme si ce monde-là n’était pas pour eux.
+              Autour de moi, des pros brillants, motivés, compétents, mais totalement perdus face à l’IA. Pas parce qu’ils n’étaient pas capables. Non. Parce qu’on leur présentait ça avec des mots compliqués, des concepts flous et trop de blabla. Comme si ce monde-là n’était pas pour eux.
             </p>
 
             <p className="mb-6">
@@ -119,11 +163,11 @@ const Approach = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/formules"
+                  to="/contact"
                   className="btn-primary inline-flex items-center space-x-2"
                   onClick={scrollToTop}
                 >
-                  <span>Voir nos formules</span>
+                  <span>Contacter-nous</span>
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -134,52 +178,7 @@ const Approach = () => {
         </div>
       </section>
 
-      {/* Valeurs */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <h2 className="section-title text-center">Nos valeurs chez Neuroly</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            {[
-              {
-                icon: <Heart className="h-8 w-8 text-primary" />,
-                title: "Humain avant tout",
-          description:
-            "Chez nous, la technologie ne remplace pas les gens, elle les aide. On parle à des humains, pas à des machines. Et ça change tout : on prend le temps d'écouter, de comprendre, d'accompagner. On veut que vous vous sentiez à l’aise, même si vous débutez.",
-        },
-        {
-          icon: <Target className="h-8 w-8 text-primary" />,
-          title: "Efficacité concrète",
-          description:
-            "Pas de solutions qui brillent juste en vitrine. Ce qui compte pour nous, c’est ce que ça change pour vous : gagner du temps, alléger la charge mentale, avancer plus vite et plus sereinement. Si ça ne vous aide pas vraiment, on ne vous le propose pas. Point final.",
-        },
-        {
-          icon: <BookOpen className="h-8 w-8 text-primary" />,
-          title: "Pédagogie accessible",
-          description:
-            "On ne vous balance pas des termes techniques comme des confettis. On explique tout simplement, avec des mots clairs, des exemples concrets, et autant de fois qu’il faut. Apprendre l’IA, ça peut être facile, et même agréable. On est là pour vous le prouver.",
-        },
-        {
-          icon: <Shield className="h-8 w-8 text-primary" />,
-          title: "Éthique & transparence",
-          description:
-            "On dit ce qu’on fait, et on fait ce qu’on dit. Pas de fausses promesses, pas d’outils douteux, pas de boîte noire incompréhensible. L’IA doit être utilisée avec bon sens, dans le respect des gens et de leurs données. Et ça, on ne transige pas dessus.",
-        }
-      ].map((value, index) => (
-        <div
-          key={index}
-          className="bg-background p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div className="mb-4">{value.icon}</div>
-          <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
-          <p className="text-text/80">{value.description}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-    {/* Engagement */}
+      {/* Engagement */}
     <section className="py-20 bg-secondary/10">
       <div className="container max-w-4xl mx-auto text-center">
         <h2 className="section-title mb-4">Notre engagement : vous mettre aux commandes</h2>
