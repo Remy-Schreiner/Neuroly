@@ -18,13 +18,13 @@ const Home = () => {
             className="mb-4"
           />
           <h1 className="text-5xl font-bold text-text mb-4">
-            Exploitez le potentiel de l'IA
+            Gagnez du temps, simplifiez vos process avec l'IA
           </h1>
           <p className="text-xl text-text/80 mb-6 max-w-2xl">
-            Les tâches répétitives, l'analyse des données, la gestion des clients n'ont jamais été aussi faciles.
+            Neuroly aide les PME à automatiser leurs tâches répétitives grâce à des outils d’IA simples, concrets et adaptés à vos besoins. Aucun jargon, juste des résultats.
           </p>
           <Link to="/contact" className="btn-primary" onClick={scrollToTop}>
-            👉 Réserver un pré-audit gratuit
+            🚀 Réserver mon audit IA gratuit
           </Link>
         </div>
       </section>
@@ -75,79 +75,100 @@ const Home = () => {
 
       {/* Testimonials */}
       <section className="py-20 bg-white">
-        <div className="container">
-          <h2 className="section-title text-center">Pourquoi s'approprier un l'IA ?</h2>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {[
-              {
-                icon: "☕",
-                title: "Il bosse pendant que t’es au café",
-                description:
-                  "Un assistant IA, c’est comme un collègue robot qui adore les tâches relou : répondre aux mails, trouver une date de réunion, classer les docs… Pendant que toi tu sirotes ton café tranquille, lui il gère comme un chef.",
-              },
-              {
-                icon: "🔍",
-                title: "Il voit tout, il sait tout (ou presque)",
-                description:
-                  "L’IA, c’est le Sherlock Holmes des chiffres. Elle lit des montagnes de tableaux et te sort les infos utiles genre : 'Hey, t’as vu que les gens cliquent plus le jeudi ?'. Moins de migraines, plus d’idées malines.",
-              },
-              {
-                icon: "😇",
-                title: "Il parle à tout le monde sans jamais s’énerver",
-                description:
-                  "Un client écrit à 3h du mat’ ? Aucun souci ! L’IA répond poliment, donne les infos, envoie même un bisou du facteur 🐌. Elle ne dort jamais, ne râle jamais, et rend tout le monde content.",
-              },
-            ].map((item, index) => (
-              <div key={index} className="text-center bg-background p-8 rounded-lg shadow-sm">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-text/80">{item.description}</p>
-              </div>
-            ))}
-          </div>
+  <div className="container">
+    <h2 className="section-title text-center">Pourquoi intégrer l'IA dans votre quotidien ?</h2>
+
+    <div className="grid md:grid-cols-3 gap-8 mt-12">
+      {[
+        {
+          icon: "⏱️",
+          title: "Du temps gagné chaque jour",
+          description:
+            "Automatisez les tâches répétitives comme les relances, les réponses aux emails ou la mise à jour de fichiers. L’IA travaille pendant que vous gérez ce qui compte vraiment.",
+        },
+        {
+          icon: "📊",
+          title: "Des décisions plus rapides et plus justes",
+          description:
+            "Grâce à l’analyse instantanée des données, vous repérez les tendances, détectez ce qui fonctionne (ou pas) et agissez plus vite, sans prise de tête.",
+        },
+        {
+          icon: "🤖",
+          title: "Accessible, même sans être expert",
+          description:
+            "Pas besoin d’être développeur pour utiliser l’IA. On vous installe des outils simples, prêts à l’emploi, qui s’intègrent à vos habitudes (Notion, Google, emails…).",
+        },
+        {
+          icon: "📈",
+          title: "Plus de rentabilité, sans plus de charge",
+          description:
+            "L’IA vous aide à faire mieux avec les mêmes ressources. Chaque automatisation vous permet de produire plus de valeur, sans alourdir vos équipes.",
+        },
+        {
+          icon: "💸",
+          title: "Moins de coûts cachés",
+          description:
+            "Moins d’erreurs manuelles, moins de tâches sous-traitées, moins de temps perdu = plus d’économies au quotidien.",
+        },
+        {
+          icon: "🎯",
+          title: "Plus de clients convertis",
+          description:
+            "En automatisant vos suivis, vos relances ou vos réponses, vous ne laissez plus filer vos prospects. L’IA travaille même quand vous dormez.",
+        },
+      ].map((item, index) => (
+        <div key={index} className="text-center bg-background p-8 rounded-lg shadow-sm">
+          <div className="text-4xl mb-4">{item.icon}</div>
+          <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+          <p className="text-text/80">{item.description}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* Demystify AI */}
       <section className="py-20 bg-secondary/10">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-6 text-primary text-5xl space-x-4">
-              <span>🧠</span>
-              <span>⚙️</span>
-              <span>🚀</span>
-            </div>
-            <h2 className="section-title">L'IA, ce n’est pas magique… mais presque.</h2>
-            <p className="section-subtitle">
-              On en entend parler partout, elle semble faire des miracles, mais entre nous : ça reste un outil. Un outil puissant, oui, mais seulement si on vous montre comment l’utiliser. Et c’est exactement ce qu’on fait.
-            </p>
+  <div className="container">
+    <div className="max-w-3xl mx-auto text-center">
+      <div className="flex justify-center mb-6 text-primary text-5xl space-x-4">
+        <span>🧠</span>
+        <span>⚙️</span>
+        <span>🚀</span>
+      </div>
+      <h2 className="section-title">L'IA, ce n’est pas magique. Mais bien utilisée, c’est bluffant.</h2>
+      <p className="section-subtitle">
+        Oubliez les buzzwords. Chez Neuroly, on vous montre comment utiliser l'IA comme un outil simple et puissant pour vous faire gagner du temps et de la clarté, sans jamais remplacer l'humain.
+      </p>
 
-            <p className="mt-6 text-lg text-text/80">
-              Que vous soyez allergique à la tech ou juste curieux, on vous accompagne pas à pas. Pas de jargon, pas de prise de tête. Juste des solutions concrètes, utiles et pensées pour vous simplifier la vie.
-            </p>
+      <p className="mt-6 text-lg text-text/80">
+        Pas besoin d’être expert ou technophile. Notre mission : rendre l’IA concrète, utile et facile à intégrer dans vos habitudes pro. Vous allez voir, c’est plus simple qu’il n’y paraît.
+      </p>
 
-            <div className="space-y-4 text-left mt-10 text-lg">
-              {[
-                "❌ Non, l’IA ne va pas piquer votre job. Elle est là pour vous aider, pas pour vous remplacer.",
-                "⏰ Gagnez facilement 1 à 2 heures par jour en automatisant les petites tâches du quotidien.",
-                "🧩 On vous montre comment ça marche, avec des exemples simples, pas des schémas compliqués.",
-                "👨‍👩‍👧‍👦 Pas besoin d’être geek ou développeur : si vous savez envoyer un mail, vous pouvez utiliser l’IA.",
-                "👐 Et surtout, vous n’êtes jamais seul : notre équipe reste là pour vous guider, répondre à vos questions et vous aider à progresser à votre rythme."
-              ].map((point, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <span>{point}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12">
-              <Link to="/approche" className="btn-secondary" onClick={scrollToTop}>
-                Découvrir notre accompagnement
-              </Link>
-            </div>
+      <div className="space-y-4 text-left mt-10 text-lg">
+        {[
+          "❌ L’IA ne remplace personne. Elle vous aide à mieux faire ce que vous faites déjà.",
+          "⏱️ Automatisez vos tâches répétitives et libérez 1 à 2 heures par jour.",
+          "🧠 On vous explique avec des exemples concrets, pas des diagrammes incompréhensibles.",
+          "📧 Si vous savez envoyer un mail, vous pouvez utiliser l’IA. C’est aussi simple que ça.",
+          "🤝 Et on reste à vos côtés à chaque étape. Vous n’êtes jamais seul face à la technologie."
+        ].map((point, index) => (
+          <div key={index} className="flex items-start space-x-3">
+            <span>{point}</span>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+
+      <div className="mt-12">
+        <Link to="/approche" className="btn-secondary" onClick={scrollToTop}>
+          Découvrir notre accompagnement
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 };

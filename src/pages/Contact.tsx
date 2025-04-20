@@ -25,25 +25,30 @@ const Contact = () => {
     <div>
       {/* Hero */}
       <section className="py-24 bg-secondary/10">
-        <div className="container max-w-3xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-text mb-6">
-            On passe à l'action ? 💥
-          </h1>
-          <p className="text-xl text-text/80">
-            L'IA ne va pas révolutionner votre activité toute seule. Mais avec nous, vous saurez exactement comment l'apprivoiser pour en faire une alliée du quotidien.
-          </p>
-        </div>
-      </section>
+  <div className="container max-w-3xl mx-auto text-center">
+    <h1 className="text-5xl font-bold text-text mb-6">
+      Prêt à gagner du temps et passer à l’action ? 💥
+    </h1>
+    <p className="text-xl text-text/80">
+      L’IA ne fait pas tout à votre place. Mais bien utilisée, elle vous libère du temps, de l’énergie, et vous aide à avancer plus vite sur ce qui compte vraiment.  
+      Et ça, on vous montre comment le faire simplement, étape par étape.
+    </p>
+  </div>
+</section>
+
 
       {/* Pré-audit */}
       <section className="py-20">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Réservez un appel - Diagnostic IA, gratuit & sans engagement</h2>
-            <p className="text-text/80 text-lg mb-6">
-              Ce questionnaire nous permet de mieux comprendre votre activité, vos habitudes, et vos besoins. <br />
-              Ensuite, on prend rendez-vous ensemble pour en discuter de vive voix 📞
-            </p>
+  <div className="container">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-4">
+        Réservez votre diagnostic IA – Gratuit, simple et sans engagement
+      </h2>
+      <p className="text-text/80 text-lg mb-6">
+        En quelques questions, on comprend votre activité, vos outils, et vos objectifs.  
+        Ensuite, on échange ensemble pour vous proposer des idées concrètes, adaptées à votre quotidien 📞  
+        Pas de jargon, pas de blabla, juste de la clarté.
+      </p>
             <div className="bg-white p-8 rounded-xl shadow-sm">
               {!showCalendly ? (
                 <iframe

@@ -59,7 +59,7 @@ function Navbar() {
               </Link>
             ))}
             <Link to="/contact" className="btn-primary px-4 py-2 text-lg font-medium" onClick={scrollToTop}>
-              Pré-audit gratuit
+              Audit gratuit
             </Link>
           </div>
 
@@ -98,7 +98,7 @@ function Navbar() {
                 setIsOpen(false);
               }}
             >
-              Pré-audit gratuit
+              Audit gratuit
             </Link>
           </div>
         )}

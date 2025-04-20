@@ -42,7 +42,7 @@ const Formulas = () => {
       <section className="py-20">
         <div className="container">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-text mb-6">Nos formules d'accompagnement</h1>
+            <h1 className="text-5xl font-bold text-text mb-6">Choisissez votre point de départ d'accompagnement</h1>
             <p className="text-xl text-text/80">
               Deux formats clairs, pensés pour s’adapter à votre niveau, vos besoins, et vos ambitions.
             </p>
